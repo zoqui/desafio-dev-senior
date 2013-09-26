@@ -7,7 +7,7 @@ Uma equipe solicitou a criação de um componente para a realização de cálcul
 
 A interface do componente define como <b>entrada</b> os seguintes parâmetros:
 
-<b>Lista de endereços</b>
+Lista de endereços
 
 Cada endereço contém os dados:
 
@@ -16,7 +16,7 @@ Cada endereço contém os dados:
 * Cidade;
 * Estado.
 
-<b>Tipos de rota</b>
+Tipos de rota
 
 Considere a relação de tipos de rota permitidos:
 
@@ -25,7 +25,7 @@ Considere a relação de tipos de rota permitidos:
 
 A <b>saída</b> deste componente deve conter:
 
-<b>Valores totais da rota</b>
+Valores totais da rota
 
 Nesse item devem constar: 
 
@@ -36,7 +36,7 @@ Nesse item devem constar:
 
 Deve-se utilizar os web services de Geocodificação e de Rotas da MapLink para realizar esta tarefa. 
 
-Você encontrará detalhes de uso nestes endereços:
+Você encontrará <b>detalhes de uso</b> nestes endereços:
 
 * <a href="http://dev.maplink.com.br/webservices/addressfinder/" target="_blank">Geocodificação - dev.maplink.com.br/webservices/addressfinder</a>
 * <a href="http://dev.maplink.com.br/webservices/rotas/" target="_blank">Roteirização - dev.maplink.com.br/webservices/rotas</a>
@@ -45,7 +45,7 @@ Para consumir os métodos dos serviços SOAP da MapLink é necessário utilizar 
 
 Caso você opte por trabalhar com a API Javascript, use esta chave: <b>ymYmaxLXdMBJRmLgendrG0RjGYOIbvLXOwBvSJvgNMpPSAFAGKdAOKFgTmzPTKs9</b>
 
-Você tem a liberdade de escolher e definir sobre a linguagem de programação, frameworks, design e arquitetura a ser adotada. O único requisito é a disponibilização deste componente para a utilização em outro projeto qualquer.
+Você tem a <b>liberdade de escolher e definir</b> sobre a linguagem de programação, frameworks, design e arquitetura a ser adotada. O único requisito é a disponibilização deste componente para a utilização em outro projeto qualquer.
 
 Outros parâmetros dos serviços de Geocodificação e de Rotas, os quais não foram mencionados, não são relevantes para essa solução, sendo assim, você tem a liberdade de definí-los como preferir.
 
