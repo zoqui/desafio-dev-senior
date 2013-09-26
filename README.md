@@ -7,7 +7,8 @@ Uma equipe solicitou a criação de um componente para a realização de cálcul
 
 A interface do componente define como entrada os seguintes parâmetros:
 
-- Lista de endereços
+<b>Lista de endereços</b>
+
 Cada endereço contém os dados:
 
 * Nome da rua/avenida;
@@ -15,7 +16,8 @@ Cada endereço contém os dados:
 * Cidade;
 * Estado.
 
-- Tipos de rota
+<b>Tipos de rota</b>
+
 Considere a relação de tipos de rota permitidos:
 
 * Rota padrão mais rápida;
@@ -23,7 +25,8 @@ Considere a relação de tipos de rota permitidos:
 
 A saída deste componente deve conter:
 
-- Valores totais da rota
+<b>Valores totais da rota</b>
+
 Nesse item devem constar: 
 
 * Tempo total da rota;
@@ -35,8 +38,8 @@ Deve-se utilizar os web services de Geocodificação e de Rotas da MapLink para 
 
 Você encontrará detalhes de uso nestes endereços:
 
-* <a href="http://dev.maplink.com.br/webservices/rotas/" target="_blank">dev.maplink.com.br/webservices/rotas/</a>
-* <a href="http://dev.maplink.com.br/webservices/addressfinder/" target="_blank">dev.maplink.com.br/webservices/addressfinder/</a>
+* <a href="http://dev.maplink.com.br/webservices/addressfinder/ - Geocodificação" target="_blank">dev.maplink.com.br/webservices/addressfinder</a>
+* <a href="http://dev.maplink.com.br/webservices/rotas/ - Roteirização" target="_blank">dev.maplink.com.br/webservices/rotas</a>
 
 Para consumir os métodos dos serviços SOAP da MapLink é necessário utilizar uma chave de acesso. Você deve utilizar a seguinte: <b>c13iyCvmcC9mzwkLd0LCbmYC5mUF5m2jNGNtNGt6NmK6NJK=</b>
 
