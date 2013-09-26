@@ -5,7 +5,7 @@ Esta página contém detalhes do exercício utilizado como requisito para a opor
 
 Uma equipe solicitou a criação de um componente para a realização de cálculos de valores totais da rota.
 
-A interface do componente define como <b>entrada</b> os seguintes parâmetros:
+O contrato do componente define como <b>entrada</b> os seguintes parâmetros:
 
 Lista de endereços
 
@@ -23,11 +23,11 @@ Considere a relação de tipos de rota permitidos:
 * Rota padrão mais rápida;
 * Rota evitando o trânsito.
 
-A <b>saída</b> deste componente deve conter:
+O contrato de <b>saída</b> deste componente deve conter:
 
 Valores totais da rota
 
-Nesse item devem constar: 
+Neste item devem constar: 
 
 * Tempo total da rota;
 * Distância total;
