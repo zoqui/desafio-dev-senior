@@ -45,7 +45,7 @@ Para consumir os métodos dos serviços SOAP da MapLink é necessário utilizar 
 
 Caso você opte por trabalhar com a API Javascript, use esta chave: <b>ymYmaxLXdMBJRmLgendrG0RjGYOIbvLXOwBvSJvgNMpPSAFAGKdAOKFgTmzPTKs9</b>
 
-Você tem a <b>liberdade de escolher e definir</b> sobre a linguagem de programação, frameworks, design e arquitetura a ser adotada. O único requisito é a disponibilização deste componente para a utilização em outro projeto qualquer.
+Você tem a <b>liberdade de escolher e definir</b> sobre a linguagem de programação, frameworks, design e arquitetura a ser adotada. O único requisito é a disponibilização deste componente para a utilização em outro projeto qualquer (independente de linguagem de programação / plataforma / ambiente).
 
 Outros parâmetros dos serviços de Geocodificação e de Rotas, os quais não foram mencionados, não são relevantes para essa solução, sendo assim, você tem a liberdade de definí-los como preferir.
 
