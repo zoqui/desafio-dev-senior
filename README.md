@@ -49,7 +49,7 @@ Você tem a <b>liberdade de escolher e definir</b> sobre a linguagem de programa
 
 Outros parâmetros dos serviços de Geocodificação e de Rotas, os quais não foram mencionados, não são relevantes para essa solução, sendo assim, você tem a liberdade de definí-los como preferir.
 
-Após a conclusão desta atividade, <b>compartilhe o código</b> construído e demais arquivos da maneira que você desejar.
+O compartilhamento do resultado produzido deve ser feito diretamente pelo GitHub. Para isso, faça um <a href="https://help.github.com/articles/fork-a-repo" target="_blank">fork</a> e nos envie sua versão com a devida implementação.
 
 Qualquer dúvida, você pode enviar um e-mail para webservices@maplink.com.br.
 
