@@ -55,4 +55,4 @@ Qualquer dúvida, você pode enviar um e-mail para webservices@maplink.com.br.
 
 Lhe desejamos um ótimo desafio!
 
-*Time Webservices MapLink*
+*Time MapLink API / Web Services*
