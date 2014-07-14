@@ -8,6 +8,8 @@ proposal: A JQuery plugin routecosts
 
 Live demo: http://goo.gl/0GmeDd
 
+![](https://690d12d2d43782056e2fc543f5edec31c17b4127.googledrive.com/host/0Bx8SjyJJ1zQ3djdDQVJYalU5NHM/examples.png)
+
 **Using the builtin address input form**:
     
     $('#mlroutecost1').routecosts({
