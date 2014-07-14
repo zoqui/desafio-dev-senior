@@ -1,0 +1,141 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;	
+}
+
+.ui-icon-spinner{
+background-image: url(data:image/gif;base64,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);
+}
+
+label{
+	display:block;
+}
+
+.ml-container{
+	position: relative;
+}
+
+.ml-form{
+	display: block;
+	position: absolute;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 5px;
+	-webkit-box-shadow: 29px 30px 59px -21px rgba(5, 3, 5, 0.54);
+	-moz-box-shadow: 29px 30px 59px -21px rgba(5,3,5,0.54);
+	box-shadow: 23px 24px 56px -22px rgba(5, 3, 5, 0.54);
+	background-color: #FFF;
+	z-index:999;
+}
+
+.ml-icon{
+	width: 16px;
+	height: 16px;
+	margin:auto;
+}
+
+.ml-icon-logo{
+	background-image: url(data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AgAAAADe3uBc/f//zPr58/X38uT7+/z57vj9/7XX1dQ6AAAAANPQzQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADv8fau9/Tq/7iURv+peQ7/tYQP/72HFP/duGn//f7+/+vs7XMAAAAA5ubnAgAAAAAAAAAA3d3fAgAAAADr7Ol99O/g/5djAPzNsX3+///7//v48f/8+/L/2K1M/tqdHfr+/fj/5+jrQAAAAAAAAAAAAAAAAPn6+wOel5YJ////+ad7KPrbxpv/9OzV/7uFIP/GkBH/1J4x///////qvV3/8cdm/Pv+/80AAAAAAAAAAOzu8QEAAAAA7vL4TO3kz/+odw37/v77/7J4Cf/t26z/9ejE/+rKhf/iqCX///rr/+2mAP/+/vr28ObRHQAAAAD///8BAAAAAP///2Hq27T/yZ48/Pbnw//nt0X/9ufB/9aRAP//9+L/8MFP///////vuTr//Pfq//f6+SkAAAAAy83QAQAAAADFydNW39O6/uKgF/z/+/P/0o8C/+bfyv/p3L//+ue4/+69S//+/fn/7blC//7++/b28N8eAAAAACopJwFTVlwJGxoYMcnQ2f+vdxD82s6w//Pfqf/FnkP/5rM//+mwKv/99+j/89SL/+/EYP7////T4MeSAwAAAAEAAAAAERERGQAAACO1uMGQ1L6m/6h7Jv7U5db/y8O8///74//+//7/8tGK/+WkDvn++e//+/39Sf///wEAAAACAAAAHQAAADMAAQE0ORQJJD2/8uMCufr/CI3s/zKZ4//VtlL/5Z8P/+i0Qv/9+Oz//f36fQAAAAD+/v4CAAAALAAAADUAAAAwAAAANgBjeCcJtfnrGJj6/xSx/P8Sevv+Lo7p///85vj7///R/v//TQAAAAD///8BAAAAAAAAABYAAAA6AAAAMgMLFw0AAAAAHYL0jxGt+/8Upfr9IXPy/xuE9en79fYpAAAQBAAAAAD7+vYDAAAAAAAAAAAAAAAAAAAADwAAAAgAAAAAAAAAABqN958Ovv7/G4j2/x5187QVq/gdAAAAALTk/wH+/v4BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBz8yYdfvTxHIT1/iB089wAAAAAMDHnAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHVHEAQAAAAAiavJMHIH1/xOp/P8eevScEqf5ASFu8gMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbi/cBVQDbARmR+GMSrv2sHYP2JgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/g8AAPgHAAD4AwAA8AEAAPABAADwAQAA8AEAAPABAADwAwAA+AcAAPgPAAD4PwAA+H8AAPj/AAD4/wAA/f8AAA==);
+}
+
+.ml-button{
+	border: 1px solid #dadada;		
+	padding: 2px;
+	border-radius: 5px;	
+	text-align: center;	
+	vertical-align: middle;
+    display: inline-block;
+    background-position: bottom center;
+	background-repeat:no-repeat;
+	background-color: whitesmoke;
+}
+
+.ml-button:hover{
+	background-color: white;
+	color: black;
+	cursor:pointer;
+}
+
+.ml-button div.ui-icon-check:hover{
+	background-position: -176px -96px; /* trash */;
+}
+
+.ml-button-toggle{
+	display: inline-block;
+}
+
+.ml-button-route-type{
+	padding: 0 4px;	
+	display: inline-block;
+}
+
+.ml-route-header
+{
+	border-bottom: 1px solid #FFA500;
+	min-height:25px;
+}
+
+.ml-route-info{
+	display:none;
+}
+
+.ml-route-result{
+	display:none;
+}
+
+.ml-route-summary-field{
+	display: inline-block;
+	margin: 0 1% 0 0%;	
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 25%;
+}
+
+.ml-route-summary-label{
+	display: inline-block;
+	color: #A9A9A9;
+	font-size: 1.2em;		
+}
+
+.ml-route-summary-value{
+	display: inline-block;
+	color: #7C7C7C;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.ml-address-row{
+	display:block;
+	padding:4px 2px;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.ml-address-field{
+	display:inline-block;
+	vertical-align: bottom;
+}
+
+input.ml-address-input{
+	border: 1px solid lightgray;
+	border-radius: 2px; 
+	min-height: 22px; 
+	padding:0 0 0 1px; 
+	margin:0 0 0 0;
+	width: 95%;
+}
+
+
+
+input.ml-address-input:hover{
+	outline: orange auto 2px;
+}
+
+input.ml-address-input:focus{
+	outline: orange auto 2px;
+}
+
+
+
+

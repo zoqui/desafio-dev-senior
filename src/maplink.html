@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Desafio MapLink">
+<meta name="author" content="Marco Aurélio Zoqui">
+<title>maplink - desafio</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="https://38b0196eba5f40caa984c78a65a7793118d26656.googledrive.com/host/0Bx8SjyJJ1zQ3ZTRyenJkczRJZDg/maplink.js"></script>
+
+<link rel="stylesheet" href="maplink-dev.css" />
+<script src="jquery-maplink.js"></script>
+
+<style>
+	.wrap{
+		margin:5%;
+	}
+</style>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+	
+	$('#mlroutecost1').routecosts({
+		addresses: [{state:'SP',city:'São Paulo',street:'Av. Paulista',number:'1000'}],
+        routeType: 0,// default route type //http://dev.maplink.com.br/javascript-api/guia-referencia
+        showButton: true, // display the button to toggle it
+        showForm: true// // display the input form
+	});
+	
+	$('#mlroutecost2').routecosts({
+		addresses: [
+			{state:'SP',city:'São Paulo',street:'Av. Paulista',number:'1000'},
+			{state:'SP',city:'Campinas',street:'Rua Prof Ferreira Lima',number:'352'}
+		],
+		routeType: 0,// default route type //http://dev.maplink.com.br/javascript-api/guia-referencia
+		showButton: false, // display the button to toggle it
+		showForm: false, // display the input form
+		onReady:function($this){			
+			$this.routecosts('evaluate',function(response){console.log(response);});// evaluate with default routeType (0)
+			$this.routecosts('routeType',23);// change route type to (23)
+			$this.routecosts('evaluate',function(response){console.log(response);});// evaluate with new routeType (23)
+		}
+	});
+	
+	
+});
+</script>
+
+</head>
+<body>
+<div class='wrap'>
+	<div>
+		<h1>Map Link - Desafio-dev-senior</h1>
+		<div style="display:inline-block;vertical-align:top;"><h2>Entrada</h2><pre>
+O contrato do componente define como entrada 
+os seguintes parâmetros:
+Lista de endereços
+Cada endereço contém os dados:
+- Nome da rua/avenida;
+- Número;
+- Cidade;
+- Estado.
+- Tipos de rota
+Considere a relação de tipos de rota permitidos:
+- Rota padrão mais rápida;
+- Rota evitando o trânsito.</pre>
+		</div>
+		<div style="display:inline-block;vertical-align:top;"><h2>Saida</h2><pre>
+Tempo total da rota;
+Distância total;
+Custo de combustível;
+Custo total considerando pedágio.</pre>
+		</div>
+
+<h3>Proposta: plugin jquery </h3>
+<hr/><br/><br/>
+		
+<h3>User interface enabled</h3>
+<hr/>
+<div id="mlroutecost1" class=""></div>
+		<pre>
+$('#mlroutecost1').routecosts({
+	addresses: [{state:'SP',city:'São Paulo',street:'Av. Paulista',number:'1000'}],
+	routeType: 0,// default route type //http://dev.maplink.com.br/javascript-api/guia-referencia
+	showButton: true, // display the button to toggle it
+	showForm: true// // display the input form
+});
+		</pre>
+<hr/>
+<h3>User interface disabled</h3>
+<hr/>
+<div id="mlroutecost2" class=""></div>
+		<pre>
+	$('#mlroutecost2').routecosts({
+		addresses: [
+			{state:'SP',city:'São Paulo',street:'Av. Paulista',number:'1000'},
+			{state:'SP',city:'Campinas',street:'Rua Prof Ferreira Lima',number:'352'}
+		],
+		routeType: 0,// default route type //http://dev.maplink.com.br/javascript-api/guia-referencia
+		showButton: false, // display the button to toggle it
+		showForm: false, // display the input form
+		onReady:function($this){			
+			$this.routecosts('evaluate',function(response){console.log(response);});// evaluate with default routeType (0)
+			$this.routecosts('routeType',23);// change route type to (23)
+			$this.routecosts('evaluate',function(response){console.log(response);});// evaluate with new routeType (23)
+		}
+	});
+		</pre>
+		please, open your javascript console to get logged costs
+	</div>
+	
+
+</div>
+</body>
+</html>
