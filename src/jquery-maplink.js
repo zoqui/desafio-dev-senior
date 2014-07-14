@@ -332,16 +332,19 @@
             serviceAddressFinder.findAddress(address, addressOptions, function (findAddressResponse) {
                 var addressLocation = findAddressResponse.addressLocation;
                 var maplink_data=$this.data("maplink_data");
-                if (addressLocation.length>0){                    
-                    if (maplink_data){
+                if (maplink_data){
+                    if (addressLocation.length>0){                    
                         maplink_data.addresses.push(addressLocation[0]);
+                        if (onsuccess && typeof(onsuccess)=='function'){
+                            onsuccess($this);
+                        }                    
+                        $this[0].settings.onAddressAdded($this);                    
                     }
-                }                
-                if (onsuccess && typeof(onsuccess)=='function'){
-                    onsuccess($this);
-                }
-                else {
-                    $this[0].settings.onAddressAdded($this);
+                    else{
+                        if (onerror && typeof(onerror)=='function'){
+                            onerror($this);
+                        }
+                    }
                 }
                 if ($this[0].settings.addresses.length==maplink_data.addresses.length){
                     $this[0].settings.onReady($this);
