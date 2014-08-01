@@ -19,7 +19,7 @@ Live demo: http://goo.gl/0GmeDd
      showForm: true// // display the input form
     });
 
-**Sintax with no user interface**:
+**Syntax with no user interface**:
    
     $('#mlroutecost1').routecosts({
      addresses: [
